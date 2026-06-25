@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D2BB83C106C8039B8FEE12C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B29A30B976F6B3C013B2E /* ShareViewController.swift */; };
+		227E7AAB5C2E7619C7950435 /* ImportCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3208CBE93608C55DEA836C0D /* ImportCoordinator.swift */; };
+		39A64DCB5A97A51901742D23 /* ScreenWritterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E5D3CEC894327BBDF58ED /* ScreenWritterUITests.swift */; };
+		46C310650D2636336EDC1262 /* AnnotationCanvasRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD738BCD139DCEF4AED6B8B9 /* AnnotationCanvasRepresentable.swift */; };
+		4EB929A207DD243344CBA1A9 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAA078E39B7B622BF4244C8 /* ShareSheet.swift */; };
+		624F1F2A4DD523DBDB28EB47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125E58F13521D4EF132B10B5 /* Assets.xcassets */; };
+		7EB8ACC633427B8D9B4437D3 /* ScreenWritterShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 05A144B57AEC4E960B8790E0 /* ScreenWritterShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		81FEC5DC46EC9C5E9600791B /* AnnotationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15656C91EF93E1F8C446AFB /* AnnotationSession.swift */; };
+		902C1008A4B794DDF63C2AE1 /* AnnotationWorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E684CC38BC0CA61C615B760 /* AnnotationWorkspaceView.swift */; };
+		9E6EE189AABF9723B013FD47 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B524AF0D2470A53612F54 /* RootView.swift */; };
+		A4E222110079D06EEAE89ADB /* SessionSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52396D466FDD57161A44885D /* SessionSidebarView.swift */; };
+		B1A1EA4D9048EBCDC29F25D9 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F68787FDBC5973D66E93E /* SessionStore.swift */; };
+		CAB2773742CE9EA6A9A9B20F /* AnnotationSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859D78CD17A23E437837684 /* AnnotationSessionTests.swift */; };
+		D547E4E32342D8CA184781E6 /* AnnotationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD4855B64337AA12F1D2EF /* AnnotationMode.swift */; };
+		E9A92A21831E8F7A6B20AFD5 /* ContentRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D05B2BCADCC9DCDB056A5 /* ContentRenderer.swift */; };
+		EAC11587FEB23A7915D9C212 /* ScreenWritterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D64E6E87B31817B0A7137E /* ScreenWritterApp.swift */; };
+		F09F8E9BEB5D0118C8EC544B /* AppLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56D69AF2008352B46C155C1 /* AppLocations.swift */; };
+		F4CC77C072A22CEAA6E0F173 /* ContentSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185466CEE5BCE7DCAA4DDAD /* ContentSource.swift */; };
+		FDEA214D13CCDFA9FD23A12E /* AnnotationExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8055BFC9D50118EB12B1911D /* AnnotationExporter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31E1B0486BEEA49F60A18952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B40784A8745CDDC822D9F71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F214E520FFE44CDBE3ED0F43;
+			remoteInfo = ScreenWritter;
+		};
+		CDE5A8AEE8437436BFBACEAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B40784A8745CDDC822D9F71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFA1A2692D729593286D1DD2;
+			remoteInfo = ScreenWritterShareExtension;
+		};
+		F3EF60A8233E0B29EA1A264D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B40784A8745CDDC822D9F71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F214E520FFE44CDBE3ED0F43;
+			remoteInfo = ScreenWritter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1AB95380D1742415D6AC6206 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7EB8ACC633427B8D9B4437D3 /* ScreenWritterShareExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01D64E6E87B31817B0A7137E /* ScreenWritterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenWritterApp.swift; sourceTree = "<group>"; };
+		05A144B57AEC4E960B8790E0 /* ScreenWritterShareExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ScreenWritterShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC798F251BCC458AF16C0AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1185466CEE5BCE7DCAA4DDAD /* ContentSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSource.swift; sourceTree = "<group>"; };
+		125E58F13521D4EF132B10B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		156E43ED0FB6D215F0AFBDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		182D05B2BCADCC9DCDB056A5 /* ContentRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRenderer.swift; sourceTree = "<group>"; };
+		2A8F68787FDBC5973D66E93E /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		3208CBE93608C55DEA836C0D /* ImportCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportCoordinator.swift; sourceTree = "<group>"; };
+		36C8092758EDB86ABC8A5636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		387E5D3CEC894327BBDF58ED /* ScreenWritterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenWritterUITests.swift; sourceTree = "<group>"; };
+		3B6D651DA4052374F661D079 /* ScreenWritterShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenWritterShareExtension.entitlements; sourceTree = "<group>"; };
+		3E684CC38BC0CA61C615B760 /* AnnotationWorkspaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationWorkspaceView.swift; sourceTree = "<group>"; };
+		46B6A2F2681A59B9C91FB22B /* ScreenWritterTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ScreenWritterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4859D78CD17A23E437837684 /* AnnotationSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationSessionTests.swift; sourceTree = "<group>"; };
+		52396D466FDD57161A44885D /* SessionSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSidebarView.swift; sourceTree = "<group>"; };
+		64E79245C193C236E8C4252A /* ScreenWritter.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ScreenWritter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		657B524AF0D2470A53612F54 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		69DD4855B64337AA12F1D2EF /* AnnotationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationMode.swift; sourceTree = "<group>"; };
+		6ECD3930EA2419E9EFE30D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8055BFC9D50118EB12B1911D /* AnnotationExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationExporter.swift; sourceTree = "<group>"; };
+		8B8558AE532905AC5353B004 /* ScreenWritter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenWritter.entitlements; sourceTree = "<group>"; };
+		8CAA078E39B7B622BF4244C8 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		9EC7B8AD9E189DF7DD1A81B4 /* ScreenWritterUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ScreenWritterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A06B29A30B976F6B3C013B2E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		D15656C91EF93E1F8C446AFB /* AnnotationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationSession.swift; sourceTree = "<group>"; };
+		DD738BCD139DCEF4AED6B8B9 /* AnnotationCanvasRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationCanvasRepresentable.swift; sourceTree = "<group>"; };
+		E56D69AF2008352B46C155C1 /* AppLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocations.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2A77BACBB212FEECEDFD6385 = {
+			isa = PBXGroup;
+			children = (
+				3729DBFD5C62A93C579036AE /* ScreenWritter */,
+				6D90C3A39E272FFDAD9BE375 /* ScreenWritterShareExtension */,
+				CF78EE5B304BD920F70FD199 /* ScreenWritterTests */,
+				7EB186BC185379F0B1A877A6 /* ScreenWritterUITests */,
+				6AB34DB148C481260DC090F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3729DBFD5C62A93C579036AE /* ScreenWritter */ = {
+			isa = PBXGroup;
+			children = (
+				125E58F13521D4EF132B10B5 /* Assets.xcassets */,
+				0CC798F251BCC458AF16C0AD /* Info.plist */,
+				8B8558AE532905AC5353B004 /* ScreenWritter.entitlements */,
+				01D64E6E87B31817B0A7137E /* ScreenWritterApp.swift */,
+				E86758A96F3F87A3582ABECE /* Models */,
+				D1B33AC2770E75FFF319FFFA /* Services */,
+				3B9BB76F731D4273E15B27F2 /* Views */,
+			);
+			path = ScreenWritter;
+			sourceTree = "<group>";
+		};
+		3B9BB76F731D4273E15B27F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD738BCD139DCEF4AED6B8B9 /* AnnotationCanvasRepresentable.swift */,
+				3E684CC38BC0CA61C615B760 /* AnnotationWorkspaceView.swift */,
+				182D05B2BCADCC9DCDB056A5 /* ContentRenderer.swift */,
+				657B524AF0D2470A53612F54 /* RootView.swift */,
+				52396D466FDD57161A44885D /* SessionSidebarView.swift */,
+				8CAA078E39B7B622BF4244C8 /* ShareSheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6AB34DB148C481260DC090F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64E79245C193C236E8C4252A /* ScreenWritter.app */,
+				05A144B57AEC4E960B8790E0 /* ScreenWritterShareExtension.appex */,
+				46B6A2F2681A59B9C91FB22B /* ScreenWritterTests.xctest */,
+				9EC7B8AD9E189DF7DD1A81B4 /* ScreenWritterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D90C3A39E272FFDAD9BE375 /* ScreenWritterShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6ECD3930EA2419E9EFE30D11 /* Info.plist */,
+				3B6D651DA4052374F661D079 /* ScreenWritterShareExtension.entitlements */,
+				A06B29A30B976F6B3C013B2E /* ShareViewController.swift */,
+			);
+			path = ScreenWritterShareExtension;
+			sourceTree = "<group>";
+		};
+		7EB186BC185379F0B1A877A6 /* ScreenWritterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				156E43ED0FB6D215F0AFBDA4 /* Info.plist */,
+				387E5D3CEC894327BBDF58ED /* ScreenWritterUITests.swift */,
+			);
+			path = ScreenWritterUITests;
+			sourceTree = "<group>";
+		};
+		CF78EE5B304BD920F70FD199 /* ScreenWritterTests */ = {
+			isa = PBXGroup;
+			children = (
+				4859D78CD17A23E437837684 /* AnnotationSessionTests.swift */,
+				36C8092758EDB86ABC8A5636 /* Info.plist */,
+			);
+			path = ScreenWritterTests;
+			sourceTree = "<group>";
+		};
+		D1B33AC2770E75FFF319FFFA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8055BFC9D50118EB12B1911D /* AnnotationExporter.swift */,
+				E56D69AF2008352B46C155C1 /* AppLocations.swift */,
+				3208CBE93608C55DEA836C0D /* ImportCoordinator.swift */,
+				2A8F68787FDBC5973D66E93E /* SessionStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E86758A96F3F87A3582ABECE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69DD4855B64337AA12F1D2EF /* AnnotationMode.swift */,
+				D15656C91EF93E1F8C446AFB /* AnnotationSession.swift */,
+				1185466CEE5BCE7DCAA4DDAD /* ContentSource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B939A5B218DE3F594D7FA34 /* ScreenWritterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE59BCF126C36152969C7723 /* Build configuration list for PBXNativeTarget "ScreenWritterUITests" */;
+			buildPhases = (
+				71D2473C1D05682F5E0C114F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66C55BD4D7416A981DF6E626 /* PBXTargetDependency */,
+			);
+			name = ScreenWritterUITests;
+			packageProductDependencies = (
+			);
+			productName = ScreenWritterUITests;
+			productReference = 9EC7B8AD9E189DF7DD1A81B4 /* ScreenWritterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DFA1A2692D729593286D1DD2 /* ScreenWritterShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6788C6618E7C3DC97360022C /* Build configuration list for PBXNativeTarget "ScreenWritterShareExtension" */;
+			buildPhases = (
+				992593F3137354693EBA0E63 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenWritterShareExtension;
+			packageProductDependencies = (
+			);
+			productName = ScreenWritterShareExtension;
+			productReference = 05A144B57AEC4E960B8790E0 /* ScreenWritterShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F214E520FFE44CDBE3ED0F43 /* ScreenWritter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00AC39890BF2927B9813FCBC /* Build configuration list for PBXNativeTarget "ScreenWritter" */;
+			buildPhases = (
+				DCF0F03D7C68A41307802E9A /* Sources */,
+				89E25B0637C8FC2012314600 /* Resources */,
+				1AB95380D1742415D6AC6206 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EE3A6311D4241EB7A4B38F0 /* PBXTargetDependency */,
+			);
+			name = ScreenWritter;
+			packageProductDependencies = (
+			);
+			productName = ScreenWritter;
+			productReference = 64E79245C193C236E8C4252A /* ScreenWritter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6B2D949FEB7CD813A8E4DAF /* ScreenWritterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BE98F91BA1B925CD8B6A5F6 /* Build configuration list for PBXNativeTarget "ScreenWritterTests" */;
+			buildPhases = (
+				A90B38AB32235CD5D4D65A2C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84E49F5B8AAD2731E9E9BC3E /* PBXTargetDependency */,
+			);
+			name = ScreenWritterTests;
+			packageProductDependencies = (
+			);
+			productName = ScreenWritterTests;
+			productReference = 46B6A2F2681A59B9C91FB22B /* ScreenWritterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B40784A8745CDDC822D9F71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5B939A5B218DE3F594D7FA34 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+						TestTargetID = F214E520FFE44CDBE3ED0F43;
+					};
+					DFA1A2692D729593286D1DD2 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					F214E520FFE44CDBE3ED0F43 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					F6B2D949FEB7CD813A8E4DAF = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 972ED81ABD708FA4236BD272 /* Build configuration list for PBXProject "ScreenWritter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 2A77BACBB212FEECEDFD6385;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6AB34DB148C481260DC090F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F214E520FFE44CDBE3ED0F43 /* ScreenWritter */,
+				DFA1A2692D729593286D1DD2 /* ScreenWritterShareExtension */,
+				F6B2D949FEB7CD813A8E4DAF /* ScreenWritterTests */,
+				5B939A5B218DE3F594D7FA34 /* ScreenWritterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89E25B0637C8FC2012314600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624F1F2A4DD523DBDB28EB47 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71D2473C1D05682F5E0C114F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A64DCB5A97A51901742D23 /* ScreenWritterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		992593F3137354693EBA0E63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D2BB83C106C8039B8FEE12C /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90B38AB32235CD5D4D65A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB2773742CE9EA6A9A9B20F /* AnnotationSessionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF0F03D7C68A41307802E9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C310650D2636336EDC1262 /* AnnotationCanvasRepresentable.swift in Sources */,
+				FDEA214D13CCDFA9FD23A12E /* AnnotationExporter.swift in Sources */,
+				D547E4E32342D8CA184781E6 /* AnnotationMode.swift in Sources */,
+				81FEC5DC46EC9C5E9600791B /* AnnotationSession.swift in Sources */,
+				902C1008A4B794DDF63C2AE1 /* AnnotationWorkspaceView.swift in Sources */,
+				F09F8E9BEB5D0118C8EC544B /* AppLocations.swift in Sources */,
+				E9A92A21831E8F7A6B20AFD5 /* ContentRenderer.swift in Sources */,
+				F4CC77C072A22CEAA6E0F173 /* ContentSource.swift in Sources */,
+				227E7AAB5C2E7619C7950435 /* ImportCoordinator.swift in Sources */,
+				9E6EE189AABF9723B013FD47 /* RootView.swift in Sources */,
+				EAC11587FEB23A7915D9C212 /* ScreenWritterApp.swift in Sources */,
+				A4E222110079D06EEAE89ADB /* SessionSidebarView.swift in Sources */,
+				B1A1EA4D9048EBCDC29F25D9 /* SessionStore.swift in Sources */,
+				4EB929A207DD243344CBA1A9 /* ShareSheet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66C55BD4D7416A981DF6E626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F214E520FFE44CDBE3ED0F43 /* ScreenWritter */;
+			targetProxy = 31E1B0486BEEA49F60A18952 /* PBXContainerItemProxy */;
+		};
+		6EE3A6311D4241EB7A4B38F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFA1A2692D729593286D1DD2 /* ScreenWritterShareExtension */;
+			targetProxy = CDE5A8AEE8437436BFBACEAA /* PBXContainerItemProxy */;
+		};
+		84E49F5B8AAD2731E9E9BC3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F214E520FFE44CDBE3ED0F43 /* ScreenWritter */;
+			targetProxy = F3EF60A8233E0B29EA1A264D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		653B036F9870DA035283F0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScreenWritterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.screenwritter.app.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenWritter.app/ScreenWritter";
+			};
+			name = Debug;
+		};
+		775256ECF3FCF114AFC2EB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_ENTITLEMENTS = ScreenWritter/ScreenWritter.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ScreenWritter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.screenwritter.app;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C5C070B0FE73782F4C1F3D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		9CB16A7B4EADA2F63E45A75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenWritterShareExtension/ScreenWritterShareExtension.entitlements;
+				INFOPLIST_FILE = ScreenWritterShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.screenwritter.app.ShareExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F5FBD828B36D7662FFCBBA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScreenWritterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.screenwritter.app.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScreenWritter;
+			};
+			name = Debug;
+		};
+		C6348875718E6A929FCAF62A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScreenWritterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.screenwritter.app.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScreenWritter;
+			};
+			name = Release;
+		};
+		DF7F82374BD16F85AF5E5687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		E1D0588FD278D764C0AB3C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenWritterShareExtension/ScreenWritterShareExtension.entitlements;
+				INFOPLIST_FILE = ScreenWritterShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.screenwritter.app.ShareExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E65D982036DB1CAD428C90BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_ENTITLEMENTS = ScreenWritter/ScreenWritter.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = ScreenWritter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.screenwritter.app;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDBA44EF65C69A9AA2CC74C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ScreenWritterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.screenwritter.app.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenWritter.app/ScreenWritter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00AC39890BF2927B9813FCBC /* Build configuration list for PBXNativeTarget "ScreenWritter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				775256ECF3FCF114AFC2EB20 /* Debug */,
+				E65D982036DB1CAD428C90BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1BE98F91BA1B925CD8B6A5F6 /* Build configuration list for PBXNativeTarget "ScreenWritterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653B036F9870DA035283F0E1 /* Debug */,
+				FDBA44EF65C69A9AA2CC74C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6788C6618E7C3DC97360022C /* Build configuration list for PBXNativeTarget "ScreenWritterShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB16A7B4EADA2F63E45A75D /* Debug */,
+				E1D0588FD278D764C0AB3C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		972ED81ABD708FA4236BD272 /* Build configuration list for PBXProject "ScreenWritter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5C070B0FE73782F4C1F3D9 /* Debug */,
+				DF7F82374BD16F85AF5E5687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DE59BCF126C36152969C7723 /* Build configuration list for PBXNativeTarget "ScreenWritterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5FBD828B36D7662FFCBBA6 /* Debug */,
+				C6348875718E6A929FCAF62A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B40784A8745CDDC822D9F71 /* Project object */;
+}
