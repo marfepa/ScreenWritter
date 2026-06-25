@@ -13,62 +13,20 @@ struct AnnotationWorkspaceView: View {
 
     var body: some View {
         GeometryReader { proxy in
-            ZStack {
-                ContentRenderer(source: session.contentSource)
-                    .ignoresSafeArea()
+            VStack(spacing: 0) {
+                annotationToolbar
 
-                AnnotationCanvasRepresentable(
-                    drawing: $drawing,
-                    mode: mode,
-                    onDrawingChanged: { newDrawing in
-                        store.updateDrawing(for: session.id, drawingData: newDrawing.dataRepresentation())
-                    }
-                )
-                .allowsHitTesting(mode == .annotate)
-                .ignoresSafeArea()
+                ZStack {
+                    ContentRenderer(source: session.contentSource)
 
-                VStack {
-                    HStack {
-                        Picker("Modo", selection: $mode) {
-                            ForEach(AnnotationMode.allCases) { mode in
-                                Text(mode.title).tag(mode)
-                            }
+                    AnnotationCanvasRepresentable(
+                        drawing: $drawing,
+                        mode: mode,
+                        onDrawingChanged: { newDrawing in
+                            store.updateDrawing(for: session.id, drawingData: newDrawing.dataRepresentation())
                         }
-                        .pickerStyle(.segmented)
-                        .frame(width: 240)
-                        .accessibilityIdentifier("modePicker")
-
-                        Spacer()
-
-                        Button {
-                            drawing = PKDrawing()
-                            store.updateDrawing(for: session.id, drawingData: Data())
-                        } label: {
-                            Label("Limpiar", systemImage: "eraser")
-                        }
-
-                        Menu {
-                            Button {
-                                exportPNG()
-                            } label: {
-                                Label("PNG", systemImage: "photo")
-                            }
-
-                            Button {
-                                exportPDF()
-                            } label: {
-                                Label("PDF", systemImage: "doc.richtext")
-                            }
-                            .disabled(session.contentKind != .pdf)
-                        } label: {
-                            Label("Exportar", systemImage: "square.and.arrow.up")
-                        }
-                    }
-                    .padding(12)
-                    .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 8))
-                    .padding()
-
-                    Spacer()
+                    )
+                    .allowsHitTesting(mode == .annotate)
                 }
             }
             .onAppear {
@@ -96,6 +54,47 @@ struct AnnotationWorkspaceView: View {
         } message: {
             Text(exportErrorMessage ?? "")
         }
+    }
+
+    private var annotationToolbar: some View {
+        HStack {
+            Picker("Modo", selection: $mode) {
+                ForEach(AnnotationMode.allCases) { mode in
+                    Text(mode.title).tag(mode)
+                }
+            }
+            .pickerStyle(.segmented)
+            .frame(width: 240)
+            .accessibilityIdentifier("modePicker")
+
+            Spacer()
+
+            Button {
+                drawing = PKDrawing()
+                store.updateDrawing(for: session.id, drawingData: Data())
+            } label: {
+                Label("Limpiar", systemImage: "eraser")
+            }
+
+            Menu {
+                Button {
+                    exportPNG()
+                } label: {
+                    Label("PNG", systemImage: "photo")
+                }
+
+                Button {
+                    exportPDF()
+                } label: {
+                    Label("PDF", systemImage: "doc.richtext")
+                }
+                .disabled(session.contentKind != .pdf)
+            } label: {
+                Label("Exportar", systemImage: "square.and.arrow.up")
+            }
+        }
+        .padding(12)
+        .background(.regularMaterial)
     }
 
     private func restoreDrawing() {
