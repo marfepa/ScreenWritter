@@ -19,6 +19,7 @@
 		9E6EE189AABF9723B013FD47 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B524AF0D2470A53612F54 /* RootView.swift */; };
 		A4E222110079D06EEAE89ADB /* SessionSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52396D466FDD57161A44885D /* SessionSidebarView.swift */; };
 		B1A1EA4D9048EBCDC29F25D9 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8F68787FDBC5973D66E93E /* SessionStore.swift */; };
+		B4E293264CFBCA1BD433C110 /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE584EB279682179A5465F30 /* AppIconView.swift */; };
 		CAB2773742CE9EA6A9A9B20F /* AnnotationSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859D78CD17A23E437837684 /* AnnotationSessionTests.swift */; };
 		D547E4E32342D8CA184781E6 /* AnnotationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DD4855B64337AA12F1D2EF /* AnnotationMode.swift */; };
 		E9A92A21831E8F7A6B20AFD5 /* ContentRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D05B2BCADCC9DCDB056A5 /* ContentRenderer.swift */; };
@@ -68,7 +69,7 @@
 
 /* Begin PBXFileReference section */
 		01D64E6E87B31817B0A7137E /* ScreenWritterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenWritterApp.swift; sourceTree = "<group>"; };
-		05A144B57AEC4E960B8790E0 /* ScreenWritterShareExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ScreenWritterShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A144B57AEC4E960B8790E0 /* ScreenWritterShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenWritterShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC798F251BCC458AF16C0AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1185466CEE5BCE7DCAA4DDAD /* ContentSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSource.swift; sourceTree = "<group>"; };
 		125E58F13521D4EF132B10B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,7 +84,7 @@
 		46B6A2F2681A59B9C91FB22B /* ScreenWritterTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ScreenWritterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4859D78CD17A23E437837684 /* AnnotationSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationSessionTests.swift; sourceTree = "<group>"; };
 		52396D466FDD57161A44885D /* SessionSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSidebarView.swift; sourceTree = "<group>"; };
-		64E79245C193C236E8C4252A /* ScreenWritter.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ScreenWritter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E79245C193C236E8C4252A /* ScreenWritter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenWritter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		657B524AF0D2470A53612F54 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		69DD4855B64337AA12F1D2EF /* AnnotationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationMode.swift; sourceTree = "<group>"; };
 		6ECD3930EA2419E9EFE30D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		D15656C91EF93E1F8C446AFB /* AnnotationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationSession.swift; sourceTree = "<group>"; };
 		DD738BCD139DCEF4AED6B8B9 /* AnnotationCanvasRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationCanvasRepresentable.swift; sourceTree = "<group>"; };
 		E56D69AF2008352B46C155C1 /* AppLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocations.swift; sourceTree = "<group>"; };
+		FE584EB279682179A5465F30 /* AppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -128,6 +130,7 @@
 			children = (
 				DD738BCD139DCEF4AED6B8B9 /* AnnotationCanvasRepresentable.swift */,
 				3E684CC38BC0CA61C615B760 /* AnnotationWorkspaceView.swift */,
+				FE584EB279682179A5465F30 /* AppIconView.swift */,
 				182D05B2BCADCC9DCDB056A5 /* ContentRenderer.swift */,
 				657B524AF0D2470A53612F54 /* RootView.swift */,
 				52396D466FDD57161A44885D /* SessionSidebarView.swift */,
@@ -287,11 +290,9 @@
 						TestTargetID = F214E520FFE44CDBE3ED0F43;
 					};
 					DFA1A2692D729593286D1DD2 = {
-						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 					F214E520FFE44CDBE3ED0F43 = {
-						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 					F6B2D949FEB7CD813A8E4DAF = {
@@ -367,6 +368,7 @@
 				D547E4E32342D8CA184781E6 /* AnnotationMode.swift in Sources */,
 				81FEC5DC46EC9C5E9600791B /* AnnotationSession.swift in Sources */,
 				902C1008A4B794DDF63C2AE1 /* AnnotationWorkspaceView.swift in Sources */,
+				B4E293264CFBCA1BD433C110 /* AppIconView.swift in Sources */,
 				F09F8E9BEB5D0118C8EC544B /* AppLocations.swift in Sources */,
 				E9A92A21831E8F7A6B20AFD5 /* ContentRenderer.swift in Sources */,
 				F4CC77C072A22CEAA6E0F173 /* ContentSource.swift in Sources */,
@@ -420,9 +422,10 @@
 		775256ECF3FCF114AFC2EB20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ScreenWritter/ScreenWritter.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = C8JCMT4298;
 				INFOPLIST_FILE = ScreenWritter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ScreenWritterShareExtension/ScreenWritterShareExtension.entitlements;
+				DEVELOPMENT_TEAM = C8JCMT4298;
 				INFOPLIST_FILE = ScreenWritterShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -613,6 +617,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ScreenWritterShareExtension/ScreenWritterShareExtension.entitlements;
+				DEVELOPMENT_TEAM = C8JCMT4298;
 				INFOPLIST_FILE = ScreenWritterShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -629,9 +634,10 @@
 		E65D982036DB1CAD428C90BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ScreenWritter/ScreenWritter.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = C8JCMT4298;
 				INFOPLIST_FILE = ScreenWritter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
