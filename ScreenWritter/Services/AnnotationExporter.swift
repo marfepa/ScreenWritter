@@ -25,7 +25,7 @@ enum AnnotationExporter {
         return url
     }
 
-    static func exportPDF(session: AnnotationSession, drawing: PKDrawing, canvasBounds: CGRect) throws -> URL {
+    static func exportPDF(session: AnnotationSession, pdfPageDrawingData: [Int: Data]) throws -> URL {
         guard case .pdf(let sourceURL) = session.contentSource, let document = PDFDocument(url: sourceURL) else {
             throw ExportError.unsupportedContent
         }
@@ -46,8 +46,9 @@ enum AnnotationExporter {
                 page.draw(with: .mediaBox, to: context.cgContext)
                 context.cgContext.restoreGState()
 
-                if pageIndex == 0 {
-                    drawing.image(from: canvasBounds, scale: UIScreen.main.scale).draw(in: CGRect(origin: .zero, size: pageBounds.size))
+                if let drawing = drawing(for: pageIndex, session: session, pdfPageDrawingData: pdfPageDrawingData) {
+                    drawing.image(from: pageBounds, scale: UIScreen.main.scale)
+                        .draw(in: CGRect(origin: .zero, size: pageBounds.size))
                 }
             }
 
@@ -58,6 +59,16 @@ enum AnnotationExporter {
 
         output.write(to: outputURL)
         return outputURL
+    }
+
+    private static func drawing(for pageIndex: Int, session: AnnotationSession, pdfPageDrawingData: [Int: Data]) -> PKDrawing? {
+        let data = pdfPageDrawingData[pageIndex] ?? legacyDrawingData(for: pageIndex, session: session)
+        guard !data.isEmpty else { return nil }
+        return try? PKDrawing(data: data)
+    }
+
+    private static func legacyDrawingData(for pageIndex: Int, session: AnnotationSession) -> Data {
+        pageIndex == 0 ? session.drawingData : Data()
     }
 
     enum ExportError: LocalizedError {

@@ -12,11 +12,11 @@ Incluido en este PR:
 - Renderizado de contenido web con `WKWebView`.
 - Renderizado de PDF con `PDFKit`.
 - Renderizado de imagenes importadas.
-- Capa transparente `PKCanvasView` con `PKToolPicker`.
-- Selector de modo `Navegar` / `Anotar`.
+- Capa transparente `PKCanvasView` anclada al scroll del contenido con `PKToolPicker`.
+- Selector flotante `Navegar` / `Anotar` y boton flotante `Limpiar`, optimizados para uso con la mano derecha.
 - Persistencia local de sesiones editables.
 - Importacion desde archivos, URLs, drag and drop y Share Extension.
-- Exportacion PNG y exportacion PDF basica para documentos.
+- Exportacion PNG y exportacion PDF multipagina para documentos.
 - Targets de unit tests y UI tests.
 - Proyecto Xcode generado con XcodeGen.
 
@@ -91,7 +91,8 @@ xcodegen generate
 
 ## Notas de implementacion
 
-- En DEBUG, el canvas usa `.anyInput` para poder probar con dedo o simulador.
-- En Release, el canvas usa `.pencilOnly` para reducir trazos accidentales y mejorar la experiencia con Apple Pencil.
+- En modo `Navegar`, los overlays de PencilKit no interceptan la interaccion del contenido web/PDF.
+- En modo `Anotar`, el canvas muestra el `PKToolPicker` y acepta dibujo con PencilKit.
+- En DEBUG, el canvas usa `.anyInput` para poder probar con dedo o simulador; en Release usa `.pencilOnly`.
 - Las anotaciones se guardan como `PKDrawing.dataRepresentation()`, separadas del contenido de fondo.
-- La exportacion PDF actual aplica la anotacion sobre la primera pagina como base funcional inicial. Mejorar la alineacion por pagina queda como siguiente iteracion.
+- Los PDF guardan anotaciones por pagina y la exportacion recorre todo el documento.

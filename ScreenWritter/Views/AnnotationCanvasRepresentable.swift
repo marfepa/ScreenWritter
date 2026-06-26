@@ -19,6 +19,7 @@ struct AnnotationCanvasRepresentable: UIViewRepresentable {
         canvasView.tool = PKInkingTool(.pen, color: .systemBlue, width: 6)
         canvasView.alwaysBounceVertical = false
         applyDrawingPolicy(to: canvasView)
+        canvasView.isUserInteractionEnabled = mode == .annotate
         context.coordinator.configureToolPicker(for: canvasView, visible: mode == .annotate)
         return canvasView
     }
