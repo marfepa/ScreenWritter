@@ -91,6 +91,19 @@ final class SessionStore {
     func updateDrawing(for id: AnnotationSession.ID, drawingData: Data) {
         guard let index = sessions.firstIndex(where: { $0.id == id }) else { return }
         sessions[index].drawingData = drawingData
+        save(sessions[index])
+    }
+
+    func updatePDFPageDrawing(for id: AnnotationSession.ID, pageIndex: Int, drawingData: Data) {
+        guard let index = sessions.firstIndex(where: { $0.id == id }) else { return }
+        sessions[index].pdfPageDrawingData[pageIndex] = drawingData
+        save(sessions[index])
+    }
+
+    func clearDrawings(for id: AnnotationSession.ID) {
+        guard let index = sessions.firstIndex(where: { $0.id == id }) else { return }
+        sessions[index].drawingData = Data()
+        sessions[index].pdfPageDrawingData = [:]
         sessions[index].updatedAt = Date()
         save(sessions[index])
     }
