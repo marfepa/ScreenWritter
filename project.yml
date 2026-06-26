@@ -20,7 +20,7 @@ targets:
         INFOPLIST_FILE: ScreenWritter/Info.plist
         TARGETED_DEVICE_FAMILY: "1,2"
         SUPPORTS_MACCATALYST: false
-        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         CODE_SIGN_ENTITLEMENTS: ScreenWritter/ScreenWritter.entitlements
     dependencies:
       - target: ScreenWritterShareExtension
